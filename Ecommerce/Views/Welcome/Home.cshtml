@@ -1,0 +1,13 @@
+﻿<h1> Name: @Model.Name</h1>
+<h1> 
+    Age:
+    @if( Model.Age <18)
+       { <p> Your age hidden Y under age </p>
+       }
+       else{
+        @Model.Age
+       }
+    
+</h1>
+
+<h1> Salary: @Model.Salary</h1>
