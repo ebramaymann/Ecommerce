@@ -38,8 +38,8 @@
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">@item.Discount</span>
-                                    @item.Price
+                                    <span class="text-muted text-decoration-line-through">@item.Price.ToString("c")</span>
+                                    @((item.Price - (item.Discount / 100 * item.Price)).ToString("c"))
                                 </div>
                             </div>
                             <!-- Product actions-->
